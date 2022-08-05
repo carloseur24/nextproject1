@@ -6,11 +6,11 @@ import { MdPlace } from "react-icons/md"
 import millify from "millify";
 
 import { baseUrl, fetchApi } from "../../utils/fectApi";
-import ImageScrollbar from "../../components/ImageScrollbar"
+import  MenuScrollbar from "../../components/MenuScrollbar.jsx"
 
 const PropertyDetails = ({ propertyDetails: { price, rentFrequency, title, agency, rooms, baths, area, isVerified, location, description, type, purpose, furnishingStatus, amenities, photos } }) => (
     <Box maxWidth="1000px" margin="auto" p="4">
-        {photos && <ImageScrollbar data={photos}/>}
+        {photos && <MenuScrollbar data={photos}/>}
         <Box w="full" p="6">
             <Flex paddingTop="2" alignItems="center" justifyContent="space-between">
                 <Flex alignItems="center">

@@ -1,6 +1,6 @@
 html,
 body {
-  padding: 0;
+  /* padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -13,6 +13,15 @@ a {
 
 * {
   box-sizing: border-box;
+  */
+} 
+.react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.react-horizontal-scrolling-menu--scroll-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,3 +33,4 @@ a {
     background: black;
   }
 }
+
